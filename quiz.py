@@ -1,35 +1,36 @@
 import random
+import json
+import os
+from datetime import datetime
 from colorama import init, Fore, Style
 
-# Initialising colorama so that we can use coloured output in terminal
+# Initialize colorama for colored terminal output
 init(autoreset=True)
 
-# This function will read questions from the file and prepare a list of questions
+# Load questions from file
 def fetchQues(fileName):
     qs = []
     with open(fileName, "r") as f:
         for line in f:
             parts = line.strip().split(',')
-            # Checking if the line has proper 6 parts (question + 4 options + correct answer)
             if len(parts) == 6:
                 q = {
-                    "ques": parts[0],         # Question text
-                    "opts": parts[1:5],       # Options A to D
-                    "ans": parts[5].strip().upper()  # Correct answer (converted to uppercase)
+                    "ques": parts[0],
+                    "opts": parts[1:5],
+                    "ans": parts[5].strip().upper()
                 }
                 qs.append(q)
     return qs
 
-# This function will ask one question at a time
+# Ask one question with validation
+
 def askQ(q, idx):
     print(f"\n{Fore.CYAN}Question {idx + 1}: {q['ques']}")
-    # Printing all four options
     print(f"A. {q['opts'][0]}")
     print(f"B. {q['opts'][1]}")
     print(f"C. {q['opts'][2]}")
     print(f"D. {q['opts'][3]}")
 
-    # Asking for user input until they give a valid input
     while True:
         userAns = input(f"{Style.BRIGHT}Your Answer (A/B/C/D): ").strip().upper()
         if userAns in ['A', 'B', 'C', 'D']:
@@ -37,7 +38,6 @@ def askQ(q, idx):
         else:
             print(f"{Fore.RED}Please enter a valid option: A, B, C, or D.")
 
-    # Checking if the given answer is correct
     if userAns == q['ans']:
         print(f"{Fore.GREEN}Correct.")
         return True
@@ -45,31 +45,49 @@ def askQ(q, idx):
         print(f"{Fore.RED}Incorrect. The correct answer is {q['ans']}.")
         return False
 
-# This is the main function where quiz starts
+# Save score to a JSON file with timestamp
+def saveScore(name, score):
+    filePath = "scores.json"
+    data = {}
+
+    if os.path.exists(filePath):
+        with open(filePath, "r") as f:
+            data = json.load(f)
+
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    newEntry = {"score": f"{score}/10", "time": now}
+
+    if name in data:
+        data[name].append(newEntry)
+    else:
+        data[name] = [newEntry]
+
+    with open(filePath, "w") as f:
+        json.dump(data, f, indent=4)
+
+    print(f"{Fore.MAGENTA}Score saved successfully with timestamp.")
+
+# Main quiz function
 def startQuiz():
     print(f"{Style.BRIGHT}{Fore.YELLOW}Welcome to the Quiz Application")
     print(f"{Fore.YELLOW}Instructions:")
     print("- Each question has four options.")
     print("- Enter A, B, C, or D as your answer.")
-    input("\nPress Enter to begin...")  # Waiting for user to start
+    input("\nPress Enter to begin...")
 
-    qs = fetchQues("questions.txt")      # Loading all questions from file
-    pickedQs = random.sample(qs, 10)     # Picking 10 random questions
+    qs = fetchQues("questions.txt")
+    pickedQs = random.sample(qs, 10)
 
     score = 0
-    for i, q in enumerate(pickedQs):     # Looping through all selected questions
-        if askQ(q, i):                   # Asking question and checking if correct
+    for i, q in enumerate(pickedQs):
+        if askQ(q, i):
             score += 1
 
-    # After all questions done, showing final score
     print(f"\n{Style.BRIGHT}{Fore.GREEN}Quiz Complete. Your Score: {score}/10")
 
-    # Giving option to user to save their score
     name = input("Enter your name to save your score (leave blank to skip): ").strip()
     if name:
-        with open("scores.txt", "a") as f:
-            f.write(f"{name},{score}/10\n")
-        print(f"{Fore.MAGENTA}Score saved successfully.")
+        saveScore(name, score)
 
-# Starting the quiz
+# Start quiz
 startQuiz()

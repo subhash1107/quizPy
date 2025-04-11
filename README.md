@@ -12,6 +12,7 @@ A terminal-based quiz game built in Python. It loads multiple-choice questions f
 - Immediate feedback after each answer
 - Displays final score out of 10
 - Option to save the score with username and date-time
+- Saved scores in json file if existing user then save inside same user container otherwise create other.
 - Uses `colorama` for clean colored output in terminal
 
 ---
