@@ -15,6 +15,25 @@ A terminal-based quiz game built in Python. It loads multiple-choice questions f
 - Uses `colorama` for clean colored output in terminal
 
 ---
+## Installation
+
+### 1. Check if Python is installed
+
+Open a terminal or command prompt and run:
+
+```bash
+py --version
+```
+### 2. If Python is not installed, download it from the official site:
+- Click on the given link and follow the instructions given on site to install
+https://www.python.org/downloads/
+
+### 3. Install Required Package (colorama)
+```bash
+py -m pip install colorama
+```
+---
+
 
 ## How to Run
 
@@ -28,3 +47,25 @@ A terminal-based quiz game built in Python. It loads multiple-choice questions f
 
 ```bash
 py quiz.py
+```
+Follow the on-screen instructions to play the quiz and optionally save your score.
+
+---
+
+## Note on questions.txt Format
+
+Each question must follow this format:
+```txt
+Question,Option A,Option B,Option C,Option D,Correct Option (A/B/C/D)
+```
+Example
+```txt
+What is the capital of France?,Berlin,Madrid,Paris,Rome,C
+```
+Make sure there are no extra spaces or missing fields.
+
+---
+That's it! You're all set to use the Console Quiz App.
+
+
+
