@@ -1,0 +1,50 @@
+What is the capital of France?,Berlin,Madrid,Paris,Rome,C
+Which planet is known as the Red Planet?,Earth,Venus,Mars,Jupiter,C
+Who wrote 'Romeo and Juliet'?,Charles Dickens,William Shakespeare,Mark Twain,Leo Tolstoy,B
+What is the chemical symbol for water?,H2O,CO2,O2,N2,A
+What is the largest ocean on Earth?,Atlantic,Indian,Arctic,Pacific,D
+Who painted the Mona Lisa?,Van Gogh,Leonardo da Vinci,Picasso,Rembrandt,B
+What is the capital of Japan?,Beijing,Seoul,Tokyo,Hanoi,C
+Which gas do plants absorb from the atmosphere?,Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,C
+What is the square root of 64?,6,7,8,9,C
+Who discovered gravity?,Einstein,Newton,Galileo,Tesla,B
+What is the currency of the USA?,Euro,Dollar,Pound,Yen,B
+Which is the smallest prime number?,0,1,2,3,C
+Who is known as the Father of Computers?,Charles Babbage,Alan Turing,Bill Gates,Steve Jobs,A
+Which continent is the Sahara Desert located in?,Asia,Australia,South America,Africa,D
+What is the boiling point of water in Celsius?,90,95,100,110,C
+Who was the first man on the moon?,Buzz Aldrin,Yuri Gagarin,Neil Armstrong,Michael Collins,C
+What is the chemical symbol for gold?,Au,Ag,Gd,Go,A
+Which country is known as the Land of the Rising Sun?,China,Korea,Japan,Vietnam,C
+How many legs does a spider have?,6,8,10,12,B
+Which language has the most native speakers?,English,Spanish,Mandarin,Hindi,C
+What does DNA stand for?,Deoxyribo Nucleic Acid,Dual Nucleic Acid,Dynamic Nuclear Acid,Deoxy Nucleic Acid,A
+What is the fastest land animal?,Lion,Leopard,Cheetah,Tiger,C
+Which country gifted the Statue of Liberty to the USA?,Germany,France,Italy,Spain,B
+What is the tallest mountain in the world?,K2,Kangchenjunga,Lhotse,Mount Everest,D
+Which element has the atomic number 1?,Oxygen,Hydrogen,Helium,Nitrogen,B
+What is the main gas found in the air we breathe?,Oxygen,Carbon Dioxide,Nitrogen,Hydrogen,C
+Which planet is closest to the sun?,Earth,Mars,Venus,Mercury,D
+Who developed the theory of relativity?,Newton,Einstein,Galileo,Curie,B
+Which instrument measures temperature?,Thermometer,Barometer,Hygrometer,Anemometer,A
+How many continents are there?,5,6,7,8,C
+What is the longest river in the world?,Nile,Amazon,Yangtze,Mississippi,A
+Which is the largest mammal?,Elephant,Whale,Hippopotamus,Rhino,B
+What color is chlorophyll?,Red,Green,Blue,Yellow,B
+What is HCl commonly known as?,Sulfuric Acid,Nitric Acid,Hydrochloric Acid,Acetic Acid,C
+Which part of the plant conducts photosynthesis?,Root,Stem,Leaf,Flower,C
+How many planets are in the solar system?,7,8,9,10,B
+What is the national flower of India?,Lotus,Rose,Sunflower,Jasmine,A
+What is the capital of Australia?,Sydney,Melbourne,Canberra,Brisbane,C
+Who was the first President of the USA?,Abraham Lincoln,Thomas Jefferson,George Washington,John Adams,C
+Which is the smallest bone in the human body?,Femur,Stapes,Ulna,Radius,B
+What is the hardest natural substance?,Gold,Iron,Diamond,Quartz,C
+Which vitamin is produced when a person is exposed to sunlight?,Vitamin A,Vitamin B,Vitamin C,Vitamin D,D
+Which blood group is the universal donor?,A,B,AB,O,D
+What does HTTP stand for?,Hyper Transfer Text Protocol,HyperText Transfer Protocol,High Text Transfer Protocol,Hyper Transfer Tech Page,B
+Which country is famous for tulips?,Belgium,France,Netherlands,Germany,C
+Which gas is used in balloons?,Oxygen,Nitrogen,Helium,Hydrogen,C
+Which is the largest internal organ in the human body?,Heart,Liver,Brain,Stomach,B
+How many chambers does the human heart have?,2,3,4,5,C
+What is the largest planet in our solar system?,Earth,Saturn,Jupiter,Mars,C
+Which organ purifies blood in the human body?,Heart,Kidney,Lungs,Liver,B
